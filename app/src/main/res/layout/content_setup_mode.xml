@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.macbook.getref.SetupMode"
+    tools:showIn="@layout/activity_setup_mode">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GetRef"
+        android:textSize="45sp" />
+    <Button
+        android:id="@+id/cinemaButton"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:text="Cinema"
+        android:background="#eb9b45" />
+
+
+    <ExpandableListView
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/expHome"
+        android:layout_below="@id/cinemaButton"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true">
+    </ExpandableListView>
+</RelativeLayout>

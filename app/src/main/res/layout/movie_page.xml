@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/movieTitle"
+        android:text="no Title"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:textSize="30dp"
+        android:textColor="#2b2b2b"
+        android:textStyle="bold" />
+    <ScrollView
+        android:layout_centerHorizontal="true"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:id="@+id/descrScroll"
+        android:layout_below="@+id/movieTitle"
+        android:layout_margin="20dp"
+        >
+    <TextView
+        android:text="no Description"
+        android:id="@+id/movieDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    </ScrollView>
+
+    <!--<Button-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="70dp"-->
+        <!--android:text="Start Watching"-->
+        <!--android:id="@+id/startButton"-->
+        <!--android:layout_below="@+id/imageView"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="121dp"-->
+        <!--android:backgroundTint="#ff7272" />-->
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="Get Refs"
+        android:id="@+id/getRefsButton"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/actorsScroll"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#50c2ff" />
+    <ScrollView
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:id="@+id/actorsScroll"
+        android:layout_below="@+id/descrScroll"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="actors"
+            android:id="@+id/actorsView"
+
+            />
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

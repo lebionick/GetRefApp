@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GetRef</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="languagesList">
+        <item>English</item>
+    </string-array>
+
+</resources>
